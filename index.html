@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Super Dummy Manual: 2025 Perfect Package Fantasy Football (ESPN)</title>
+  <meta name="description" content="A super simple guide to play Fantasy NFL on the ESPN app: rules, deadlines, projections, bye weeks, trades, and scoring by position."/>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --muted: #94a3b8;
+      --text: #e5e7eb;
+      --accent: #22c55e;
+      --accent-2: #60a5fa;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --border: #1f2937;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0;
+      background: radial-gradient(1200px 800px at 20% -10%, #1e293b 0%, var(--bg) 40%),
+                  radial-gradient(1200px 800px at 120% 10%, #0b1220 0%, var(--bg) 40%);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      line-height: 1.6;
+    }
+    .container { max-width: 980px; margin: 0 auto; padding: 32px 20px 96px; }
+    header { position: sticky; top: 0; backdrop-filter: blur(6px); background: rgba(15, 23, 42, 0.7); border-bottom: 1px solid var(--border); z-index: 10; }
+    header .inner { max-width: 980px; margin: 0 auto; padding: 12px 20px; display:flex; gap:12px; align-items:center; justify-content:space-between; }
+    .title { display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:0.2px; }
+    .badge { font-size:12px; background: linear-gradient(135deg, var(--accent), var(--accent-2)); color:#041013; padding:4px 10px; border-radius:999px; font-weight:800; text-transform:uppercase; letter-spacing:.8px; box-shadow:0 6px 16px rgba(34,197,94,.25); }
+    .hero { display:grid; gap:16px; margin:24px 0 16px; }
+    .hero h1 { font-size: clamp(26px, 4vw, 40px); margin:0; }
+    .hero p { margin:0; color:var(--muted); font-size:15px; }
+    .card { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border:1px solid var(--border); border-radius:16px; padding:18px; box-shadow:0 8px 30px rgba(0,0,0,0.25); }
+    .grid { display:grid; gap:16px; }
+    @media (min-width: 840px) { .grid.cols-2 { grid-template-columns: 1fr 1fr; } .grid.cols-3 { grid-template-columns: repeat(3,1fr); } }
+    nav.quick { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
+    nav.quick a { text-decoration:none; color:var(--text); border:1px solid var(--border); padding:8px 12px; border-radius:999px; font-size:14px; background: rgba(255,255,255,0.02); }
+    h2 { margin:26px 0 10px; font-size: clamp(20px,3vw,26px); letter-spacing:.2px; }
+    h3 { margin:18px 0 8px; font-size:18px; letter-spacing:.2px; }
+    ul, ol { margin:8px 0 12px 22px; }
+    li { margin:6px 0; }
+    .note { border-left:3px solid var(--accent); padding:8px 12px; background: rgba(34,197,94,0.07); border-radius:8px; color:#d1fae5; }
+    .warn { border-left:3px solid var(--warning); background: rgba(245,158,11,0.08); color:#fff7ed; }
+    .danger { border-left:3px solid var(--danger); background: rgba(239,68,68,0.08); color:#fee2e2; }
+    .pill { display:inline-block; padding:3px 8px; border:1px solid var(--border); border-radius:999px; font-size:12px; color:var(--muted); margin-left:6px; }
+    .kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; background:#0b1220; border:1px solid var(--border); border-bottom-width:3px; padding:2px 6px; border-radius:6px; font-size:12px; color:var(--text); }
+    table { width:100%; border-collapse:collapse; margin:10px 0 14px; font-size:14px; }
+    th, td { border:1px solid var(--border); padding:10px; text-align:left; }
+    th { background: rgba(255,255,255,0.04); font-weight:700; }
+    .footer { margin-top:36px; color:var(--muted); font-size:13px; text-align:center; }
+    .small { font-size:13px; color:var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <div class="title">
+        <span class="badge">Guide</span>
+        <span>Super Dummy Manual • 2025 Perfect Package Fantasy Football</span>
+      </div>
+      <div class="small">Updated: 2025-08-27</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero card">
+      <h1>Welcome to the 2025 Perfect Package Fantasy Football league!</h1>
+      <p>Build your team with real NFL players and score points based on their performance. Each week you face another team. Whoever scores more points wins!</p>
+      <nav class="quick">
+        <a href="#rules">Rules</a>
+        <a href="#dates">Dates</a>
+        <a href="#play">How to Play</a>
+        <a href="#deadlines">Deadlines</a>
+        <a href="#projections">Projections</a>
+        <a href="#bye">Bye Weeks</a>
+        <a href="#waivers">Waivers</a>
+        <a href="#trades">Trades</a>
+        <a href="#scoring">Scoring</a>
+        <a href="#tips">Tips</a>
+        <a href="#checklist">Checklist</a>
+        <a href="#glossary">Glossary</a>
+      </nav>
+    </section>
+
+    <section id="rules" class="card">
+      <h2>1) League rules</h2>
+      <ul>
+        <li><strong>Teams:</strong> 12</li>
+        <li><strong>Draft:</strong> Automatic (this year)</li>
+        <li><strong>Roster:</strong> 16 players / 9 starters</li>
+        <li><strong>Format:</strong> Head-to-head, points-based</li>
+        <li><strong>Scoring:</strong> passing, receptions, rushing, kicking, defense, and special teams plays.</li>
+      </ul>
+      <p class="note">New to Fantasy? The app suggests starters and flags injuries and bye weeks.</p>
+    </section>
+
+    <section id="dates" class="grid cols-2">
+      <div class="card">
+        <h2>2) Key dates</h2>
+        <ul>
+          <li>📅 <strong>Automatic draft:</strong> August 28</li>
+          <li>🏈 <strong>Season kickoff:</strong> September 4, 2025</li>
+          <li>🏆 <strong>Fantasy Playoffs:</strong> NFL Weeks 14–17</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Weekly format</h2>
+        <ul>
+          <li>Your team faces another team each week.</li>
+          <li>Only <strong>starters</strong> score.</li>
+          <li>The bench holds backups or speculative picks.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="play" class="card">
+      <h2>3) How to play each week</h2>
+      <h3>A) Set your lineup</h3>
+      <ul>
+        <li>Choose starters and bench before games start.</li>
+        <li>The app flags injuries and bye weeks.</li>
+        <li>If unsure, check the <a href="#projections">projections</a>.</li>
+      </ul>
+
+      <h3>B) Win your matchup</h3>
+      <ul>
+        <li>Whoever scores more points that week wins.</li>
+        <li>Tiebreaker for regular season: Total touchdowns scored.</li>
+      </ul>
+
+      <h3>C) Manage your team</h3>
+      <ul>
+        <li><a href="#waivers"><strong>Waivers / Free agents</strong></a>: add unclaimed players.</li>
+        <li><a href="#trades"><strong>Trades</strong></a>: negotiate with other teams.</li>
+        <li><strong>News:</strong> watch injuries, hot streaks and lineup changes.</li>
+      </ul>
+    </section>
+
+    <section id="deadlines" class="card">
+      <h2>4) Deadlines</h2>
+      <p class="warn"><strong>Golden rule:</strong> A player is locked on your lineup when their team's real game <u>starts</u>. From that minute you cannot move them.</p>
+      <ul>
+        <li><strong>Thursday night:</strong> first game of the week — set your starters before this.</li>
+        <li><strong>Sunday</strong> (early & late): players lock for those windows.</li>
+        <li><strong>Monday night:</strong> last game — last chance to move players who haven't played yet.</li>
+      </ul>
+      <p class="note">Tip: if possible, keep Monday players in <strong>FLEX</strong> to preserve more replacement options.</p>
+    </section>
+
+    <section id="projections" class="card">
+      <h2>5) Projections</h2>
+      <p>ESPN shows an expected points number for each player each week. It's a guide, not a guarantee.</p>
+      <ul>
+        <li>Use projections to choose between similar players.</li>
+        <li>A projection of “0” may indicate injury or <span class="kbd">BYE</span>.</li>
+      </ul>
+    </section>
+
+    <section id="bye" class="card">
+      <h2>6) Bye Weeks</h2>
+      <p class="danger"><strong>Watch out!</strong> If a player is on <span class="kbd">BYE</span> they score <strong>0 points</strong>. Don't start them.</p>
+      <ul>
+        <li>The app marks BYE weeks.</li>
+        <li>Plan at least one week ahead to cover gaps.</li>
+      </ul>
+    </section>
+
+    <section id="waivers" class="card">
+      <h2>7) Waivers & Free agents</h2>
+      <ul>
+        <li>After games, many players go through <strong>waivers</strong> (claim order).</li>
+        <li>Submit a claim; if you have priority you'll get the player when waivers process.</li>
+        <li>If no one claims them, they become a <strong>free agent</strong> and can be added immediately.</li>
+      </ul>
+    </section>
+
+    <section id="trades" class="card">
+      <h2>8) Trades</h2>
+      <ol>
+        <li>Propose a trade to another team (e.g., your RB for their WR).</li>
+        <li>The other team accepts or rejects.</li>
+        <li>There may be a review/veto period depending on league settings.</li>
+      </ol>
+      <p class="note">Best trades help both teams: you cover a need and the other team does too.</p>
+    </section>
+
+ <section id="scoring" class="card">
+   <h2>9) Scoring by position</h2>
+   <table>
+     <thead>
+       <tr><th>Event</th><th>QB</th><th>RB/WR/TE</th><th>K</th><th>D/ST</th></tr>
+     </thead>
+     <tbody>
+       <tr><td>Passing yards</td><td>1 point per 25 yds</td><td>—</td><td>—</td><td>—</td></tr>
+       <tr><td>Passing TD</td><td>+4</td><td>—</td><td>—</td><td>—</td></tr>
+       <tr><td>Interception thrown</td><td>-2</td><td>—</td><td>—</td><td>—</td></tr>
+       <tr><td>Rushing yards</td><td>1 point per 10 yds</td><td>1 point per 10 yds</td><td>—</td><td>—</td></tr>
+       <tr><td>Receiving yards</td><td>—</td><td>1 point per 10 yds</td><td>—</td><td>—</td></tr>
+       <tr><td>Reception (PPR)</td><td>—</td><td>+1 per catch</td><td>—</td><td>—</td></tr>
+       <tr><td>Rushing/receiving TD</td><td>+6</td><td>+6</td><td>—</td><td>—</td></tr>
+       <tr><td>Extra point (PAT)</td><td>—</td><td>—</td><td>+1</td><td>—</td></tr>
+       <tr><td>FG 0–39 yds</td><td>—</td><td>—</td><td>+3</td><td>—</td></tr>
+       <tr><td>FG 40–49 yds</td><td>—</td><td>—</td><td>+4</td><td>—</td></tr>
+       <tr><td>FG 50+ yds</td><td>—</td><td>—</td><td>+5</td><td>—</td></tr>
+       <tr><td>Sack</td><td>—</td><td>—</td><td>—</td><td>+1</td></tr>
+       <tr><td>Interception / Fumble recovery</td><td>—</td><td>—</td><td>—</td><td>+2</td></tr>
+       <tr><td>Defensive or return TD</td><td>—</td><td>—</td><td>—</td><td>+6</td></tr>
+       <tr><td>Points allowed (D/ST)</td><td>—</td><td>—</td><td>—</td><td>See breakdown below</td></tr>
+     </tbody>
+   </table>
+
+   <div class="subtable">
+     <h3>D/ST: Points Allowed Breakdown</h3>
+     <table>
+       <thead>
+         <tr><th>Points Allowed</th><th>D/ST Fantasy Points</th></tr>
+       </thead>
+       <tbody>
+         <tr><td>0 (Shutout)</td><td>+10</td></tr>
+         <tr><td>1–6</td><td>+7</td></tr>
+         <tr><td>7–13</td><td>+4</td></tr>
+         <tr><td>14–20</td><td>+1</td></tr>
+         <tr><td>21–27</td><td>0</td></tr>
+         <tr><td>28–34</td><td>-1</td></tr>
+         <tr><td>35+</td><td>-4</td></tr>
+       </tbody>
+     </table>
+   </div>
+
+      <h3>Starter positions</h3>
+      <ul>
+        <li><strong>QB:</strong> Quarterback.</li>
+        <li><strong>RB:</strong> Running back.</li>
+        <li><strong>WR:</strong> Wide receiver.</li>
+        <li><strong>TE:</strong> Tight end.</li>
+        <li><strong>FLEX:</strong> Start a RB, WR or TE.</li>
+        <li><strong>K:</strong> Kicker.</li>
+        <li><strong>D/ST:</strong> Defense & special teams.</li>
+      </ul>
+    </section>
+
+    <section id="tips" class="card">
+      <h2>10) Quick tips</h2>
+      <ul>
+        <li>Check your team before <strong>Thursday</strong>.</li>
+        <li>Avoid starters on <span class="kbd">BYE</span> or injured.</li>
+        <li>Use projections and news, but trust your judgment.</li>
+        <li>Propose trades if you lack depth at a position.</li>
+        <li>Use FLEX for the safest or highest-ceiling player.</li>
+      </ul>
+    </section>
+
+    <section id="checklist" class="card">
+      <h2>11) Weekly checklist</h2>
+      <ul>
+        <li>🔔 Are all your starters healthy and <strong>not on BYE</strong>?</li>
+        <li>📊 Did you check projections and matchups?</li>
+        <li>🧠 Do you have a backup plan if someone is questionable?</li>
+        <li>🛒 Did you submit waivers if you need replacements?</li>
+      </ul>
+    </section>
+
+    <section id="glossary" class="card">
+      <h2>12) Quick glossary</h2>
+      <ul>
+        <li><strong>BYE:</strong> team rest week (0 points).</li>
+        <li><strong>PPR:</strong> points per reception (+1 per catch).</li>
+        <li><strong>Waivers:</strong> priority system to claim players.</li>
+        <li><strong>FLEX:</strong> roster slot for RB/WR/TE.</li>
+        <li><strong>Ceiling/Floor:</strong> expected high/low scoring range.</li>
+      </ul>
+    </section>
+
+    <p class="footer">And most important... Have fun! 🏈</p>
+  </main>
+</body>
+</html>
